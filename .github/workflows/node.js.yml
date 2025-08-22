@@ -32,3 +32,4 @@ jobs:
         # Example deployment command (e.g., rsync, scp, or a cloud CLI)
         echo "Deploying to dev server..."
         # Your deployment commands here
+
