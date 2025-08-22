@@ -19,3 +19,16 @@ jobs:
 
       - run: npm ci
       - run: npm test
+      
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build # This job will only run if the 'build' job succeeds
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Deploy to dev environment
+      run: |
+        # Example deployment command (e.g., rsync, scp, or a cloud CLI)
+        echo "Deploying to dev server..."
+        # Your deployment commands here
